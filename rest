@@ -1,0 +1,6 @@
+GET http://localhost:3030/ HTTP/1.1
+
+###
+
+GET http://localhost:3030/?recordid=586bd3e0ba098409993dddec0d9ad0f84454f3bd
+###

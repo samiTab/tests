@@ -1,0 +1,17 @@
+{
+  "name": "com.instant.system.pexplorer",
+  "version": "1.0.0",
+  "description": "Parking explorer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node api/server.js"
+  },
+  "author": "sami",
+  "license": "free",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8"
+  }
+}
