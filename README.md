@@ -71,6 +71,8 @@ npm test
 
   * Variabilization and automatic set up of the NODE environment, in case we have more than one env.
 
+  * Better Code refactoring in case the code is going to grow up or to store data (using database)
+
   * More tests for error cases
 
 -------------------------------------------
