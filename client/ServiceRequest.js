@@ -1,12 +1,9 @@
-
 class ServiceRequest {
-
   // build ServiceRequest to perform requests to the source api
   constructor(options, id) {
     this.sr = {
       ...options,
     };
-    
     this.recordid = id;
   }
 
@@ -15,14 +12,17 @@ class ServiceRequest {
     const { ...srCopy } = this.sr;
     return srCopy;
   }
+
   /**
    * retrieve only the specified record
    */
   getByRecordID() {
+    // use a copy of the sr object to don't modify the original
     const { ...srCopy } = this.sr;
-    srCopy.uri = srCopy.uri+`&refine.recordid=${this.recordid}`;
+    srCopy.uri += `&refine.recordid=${this.recordid}`;
     return srCopy;
   }
 }
+
 
 module.exports = ServiceRequest;

@@ -4,12 +4,19 @@
   "description": "Parking explorer",
   "main": "server.js",
   "scripts": {
-    "start": "node api/server.js"
+    "start": "node api/server.js",
+    "test": "mocha --timeout=5000",
+    "lint": "eslint ."
   },
   "author": "sami",
   "license": "free",
   "dependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.19.1",
     "express": "^4.17.1",
+    "mocha": "^6.2.2",
     "nodemon": "^1.19.4",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.8"

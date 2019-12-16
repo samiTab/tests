@@ -2,7 +2,15 @@
     "SERVER": {
         "HOST": "127.0.0.1",
         "PORT": 3030,
-        "PROTOCOL": "http",
+        "PROTOCOL": "https",
         "BASE_PATH": "/"   
+    },
+
+    "INTEGRATION_TESTS": {
+        "HOST": "127.0.0.1",
+        "PORT": 3333,
+        "PROTOCOL": "http",
+        "BASE_PATH": "/",
+        "PARAM": "?recordid=" 
     }
 }
